@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOVELY VEZZIES - Home</title>
+  <title>Cart - LOVELY VEZZIES Grocery</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,33 +19,21 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Groceries delivered in minutes!</h1>
-        <p>Order fresh fruits, vegetables, snacks, and more. Fast delivery, best prices.</p>
-        <a href="products.html" class="cta-btn">Shop Now</a>
+    <section class="cart-section">
+      <h1>Your Cart</h1>
+      <div id="cartItems">
+        <!-- Cart items will be injected by JS -->
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Groceries" class="hero-img">
-    </section>
-    <section class="features">
-      <div class="feature-card">
-        <i class="fa fa-bolt"></i>
-        <h3>Lightning Fast</h3>
-        <p>Get your groceries delivered in under 15 minutes.</p>
-      </div>
-      <div class="feature-card">
-        <i class="fa fa-leaf"></i>
-        <h3>Fresh & Healthy</h3>
-        <p>Only the best quality products, handpicked for you.</p>
-      </div>
-      <div class="feature-card">
-        <i class="fa fa-tags"></i>
-        <h3>Best Prices</h3>
-        <p>Unbeatable prices and daily deals on all essentials.</p>
+      <div id="cartTotal"></div>
+      <button id="whatsappOrderBtn" class="cta-btn" style="display:none;">
+        <i class="fa fa-whatsapp"></i> Place Order on WhatsApp
+      </button>
+      <div id="emptyCartMsg" style="display:none;">
+        <p>Your cart is empty. <a href="products.html">Shop now!</a></p>
       </div>
     </section>
     <section class="whatsapp-contact">
-      <h2>Order or Contact on WhatsApp</h2>
+      <h2>Need Help?</h2>
       <a class="whatsapp-link" href="https://wa.me/918825092106" target="_blank">
         <i class="fa fa-whatsapp"></i> Chat with us: 8825092106
       </a>
