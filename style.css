@@ -1,0 +1,267 @@
+:root {
+  --primary: #43a047;
+  --accent: #f9a825;
+  --bg: #f7fff7;
+  --white: #fff;
+  --shadow: 0 4px 24px rgba(67,160,71,0.08);
+  --radius: 1.2rem;
+  --font: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: #222;
+}
+
+header {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+.logo span {
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem 4rem 2rem;
+  background: linear-gradient(90deg, #e8f5e9 60%, #fff 100%);
+  min-height: 60vh;
+  animation: fadeIn 1.2s;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero h1 {
+  font-size: 2.7rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  animation: slideInLeft 1s;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444;
+  animation: slideInLeft 1.2s;
+}
+.cta-btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: background 0.2s, transform 0.2s;
+  animation: popIn 1.3s;
+}
+.cta-btn:hover {
+  background: var(--accent);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+.hero-img {
+  width: 320px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 1.5s;
+}
+
+.veggies {
+  padding: 3rem 1rem 2rem 1rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: var(--shadow);
+  animation: fadeInUp 1.2s;
+}
+.veggies h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.veggie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.veggie-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1.2s;
+}
+.veggie-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(67,160,71,0.13);
+}
+.veggie-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--primary);
+  background: #fff;
+  transition: border 0.2s;
+}
+.veggie-card h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+.veggie-card p {
+  margin: 0.2rem 0 1rem 0;
+  color: #555;
+}
+.order-btn {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: var(--shadow);
+  margin-top: 0.5rem;
+}
+.order-btn:hover {
+  background: var(--primary);
+  color: var(--accent);
+  transform: scale(1.07);
+}
+
+.about, .contact {
+  max-width: 700px;
+  margin: 3rem auto 2rem auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  animation: fadeInUp 1.2s;
+}
+.about h2, .contact h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.whatsapp-link {
+  color: var(--white);
+  background: #25d366;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.whatsapp-link:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+@keyframes popIn {
+  0% { transform: scale(0.7);}
+  80% { transform: scale(1.1);}
+  100% { transform: scale(1);}
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero-img {
+    width: 220px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .veggie-grid {
+    grid-template-columns: 1fr;
+  }
+  .about, .contact, .veggies {
+    padding: 1rem 0.5rem;
+  }
+}
